@@ -15,8 +15,8 @@
 
 ## React Component 
 - Functional Component 
- - it's a normal Javascript function that return a JSX 
+  - it's a normal Javascript function that return a JSX 
 - Class Componet
- - it's a normal Javscript Class inside that have render() method => that's return the JSX
+  - it's a normal Javscript Class inside that have render() method => that's return the JSX
 
 #### JSX (Babel) =>  React.createElement('h1', {}, "Rahul Mishra") => JS Object => HTML
