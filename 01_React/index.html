@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  
+    <script>
+        // React Element
+        const reactElement = React.createElement('div', {id: "roots" }, [
+            React.createElement("ul", {}, [
+               React.createElement("li", {}, "Amar"),
+               React.createElement("li", {}, "Jayesh"),
+               React.createElement("li", {}, "Rahul"),
+            ]), 
+            React.createElement("ul", {}, [
+               React.createElement("li", {}, "Amar"),
+               React.createElement("li", {}, "Jayesh"),
+               React.createElement("li", {}, "Rahul"),
+            ])
+        ])  
+
+        // React Components
+        // const reactComponents = () => {
+        //     return <h1>Rahul Mishra {} </h1> // JSX (Babel) =>  React.createElement('h1', {}, "Rahul Mishra") => JS Object => HTML
+            
+        // }
+
+       
+
+
+
+
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+        root.render(reactElement)
+    </script>
+  </body>
+</html>
